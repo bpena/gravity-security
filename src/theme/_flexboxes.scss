@@ -1,0 +1,11 @@
+@import 'functions';
+
+@mixin flexboxes() {
+    .flex-column {
+        @include flex-column();
+    }
+
+    .flex-row {
+        @include flex-row();
+    }
+}

@@ -1,0 +1,24 @@
+@import 'variables';
+
+@mixin chips() {
+    .mat-chip-list {
+
+        div.mat-chip-list-wrapper {
+            justify-content: flex-start;
+
+            @media (max-width: $app-medium-size) {
+                justify-content: space-between;
+            }
+
+            .mat-chip {
+                @media (max-width: $app-medium-size) {
+                    margin: 5px 0 0 0 !important;
+                }
+
+                &.is-empty {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
