@@ -1,0 +1,52 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            Log in
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="signinForm" (ngSubmit)="signIn(form)" #form="ngForm">
+
+            <mat-form-field class="full-width">
+                <mat-icon matPrefix aria-hidden="false">email</mat-icon>
+                <input matInput placeholder="Email" formControlName="email" #email>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-icon matPrefix>lock</mat-icon>
+                <input matInput type="password" placeholder="Password" formControlName="password" #password>
+            </mat-form-field>
+
+            <button type="submit" mat-raised-button [disabled]="!form.valid" class="full-width" color="primary"> Log in</button>
+        </form>
+
+        <div class="form-group button-group">
+            <button mat-raised-button class="full-width" (click)="signInWithFacebook()">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                Login with Facebook
+            </button>
+
+            <button mat-raised-button class="full-width" (click)="signInWithTwitter()">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                Login with Twitter
+            </button>
+
+            <button mat-raised-button class="full-width" (click)="signInWithGithub()">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                Login with Github
+            </button>
+
+            <button mat-raised-button class="full-width" (click)="signInWithGoogle()">
+                <i class="fa fa-google" aria-hidden="true"></i>
+                Login with Google
+            </button>
+        </div>
+
+        <span class="left full-width">
+            <small>Don\'t have an account?</small>
+            <a mat-button color="accent" routerLink="../signup">Create One</a>
+        </span>
+
+    </mat-card-content>
+
+</mat-card>

@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+    production: false,
+
+    config: {
+        apiKey: "AIzaSyCyR5H7TetrobDK_XxGoOBnRMhQ9u65Ou8",
+        authDomain: "gravity-security.firebaseapp.com",
+        databaseURL: "https://gravity-security.firebaseio.com",
+        projectId: "gravity-security",
+        storageBucket: "gravity-security.appspot.com",
+        messagingSenderId: "949318725430"
+    }
 };
 
 /*

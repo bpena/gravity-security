@@ -28,7 +28,7 @@
             ],
             "styles": [
               "src/theme/styles.scss",
-              "src/theme/theme.scss",
+              "src/theme/theme.scss"
             ],
             "scripts": []
           },
@@ -78,7 +78,7 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/theme/styles.scss",
-              "src/theme/theme.scss",
+              "src/theme/theme.scss"
             ],
             "scripts": [],
             "assets": [

@@ -1,0 +1,61 @@
+@import 'src/theme/functions';
+@import 'src/theme/variables';
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$google-color: #dd4b39;
+$github-color: #333333;
+
+:host {
+    overflow: auto;
+
+    .mat-card {
+        min-height: calc(600px - 64px - 48px);
+
+        @media(max-width: $app-small-size) {
+            min-height: calc(600px - 56px - 48px);
+        }
+
+        .mat-card-header {
+            .mat-card-avatar {
+                font-size: 2.5em;
+            }
+
+            .mat-card-title {
+                font-size: 2.5em;
+                margin: 0;
+            }    
+        }
+    }
+
+    .button-group {
+        @include flex-column();
+        margin-top: 5px;
+
+        button {
+            margin-top: 5px;
+            text-align: left;
+
+            i {
+                font-size: 150%;
+                margin-left: calc(50% - 77px);
+                margin-right: 10px;
+            }
+
+            .fa-facebook {
+                color: $facebook-color;
+            }
+    
+            .fa-twitter {
+                color: $twitter-color;
+            }
+    
+            .fa-github {
+                color: $github-color;
+            }
+    
+            .fa-google {
+                color: $google-color;
+            }    
+        }
+    }
+}
